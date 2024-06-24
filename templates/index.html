@@ -1,22 +1,26 @@
-{% extends 'base.html' %}
-{% block title %}Coffee and Wifi{% endblock %}
-
-{% block content %}
-<div class="jumbotron text-center">
-  <div class="container">
-    <h1 class="display-4">☕️ Coffee & Wifi 💻</h1>
-    <p class="lead">Kafede ders çalışmak istiyorsun ama güç ve hızı mı sorun ediyorsun?</p>
-    <hr class="my-4" />
-    <p>
-      Doğru adestesin! Priz sayısı, internet hızı, kahve kalitesi gibi özellikleri içeren kafe koleksiyonuma bir göz at!.
-    </p>
-    <a
-      class="btn btn-warning btn-lg"
-      href="{{ url_for('cafes') }}"
-      role="button"
-      >Haydi Tıkla!</a
-    >
-  </div>
-</div>
-
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <title>
+            Coffee and Wifi
+        </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/css/styles.css">
+    </head>
+    <body>
+        <div class="jumbotron text center">
+            <div class="container">
+                <h1 class="display-4">Coffee & Wifi</h1>
+                <p class="lead"> Kafede ders çalışmak istiyorsun ama güç ve hızı mı sorun ediyorsun? </p>
+                <hr class="my-4">
+                <p> Doğru adrestesin! Priz sayısı, internet hızı, kahve kalitesi gibi özellikleri içeren kafe koleksiyonuma bir göz at!.</p>
+                <a class="btn btn-warning btn-lg" href="{{url_for('cafes')}}" role="button">Haydi Tıkla!</a>
+            </div>
+        </div>
+    </body>
+</html>

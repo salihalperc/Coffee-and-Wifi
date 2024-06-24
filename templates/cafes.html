@@ -1,26 +1,37 @@
-{% extends 'base.html' %}
-{% block title %}All Cafes{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <title>
+            All Cafes
+        </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/css/styles1.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Tüm Kafeler</h1>
+                    <table class="table" style="color: white">
+                        {% for row in cafes %}
+                        <tr>
+                        {% for item in row %} {% if item[0:4] == "http" %}
+                            <td><a href="{{ item }}">Haritalar</a></td>
+                            {% else %}
+                            <td>{{ item }}</td>
+                            {% endif %} {% endfor %}
+                        </tr>
+                        {% endfor %}
+                    </table>
+                    <a href="/">Ana sayfaya dön</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
 
-{% block content %}
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12">
-      <h1>Tüm kafeler</h1>
-
-      <table class="table" style="color: white">
-        {% for row in cafes %}
-        <tr>
-          {% for item in row %} {% if item[0:4] == "http" %}
-          <td><a href="{{ item }}">Haritalar</a></td>
-          {% else %}
-          <td>{{ item }}</td>
-          {% endif %} {% endfor %}
-        </tr>
-        {% endfor %}
-      </table>
-      <p><a href="{{ url_for('home') }}">Ana sayfaya dön</a></p>
-    </div>
-  </div>
-</div>
-
-{% endblock %}

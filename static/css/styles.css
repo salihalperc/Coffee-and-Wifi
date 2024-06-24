@@ -1,10 +1,30 @@
-/* to override Bootstrap styles for some things */
-
-body {
-background-color: #333;
-color: white;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
+body {
+    background-image: url('/static/resimler/Adsıztasarım.jpg');
+    background-size: cover; /* Resmin tam olarak kaplamasını sağlar */
+    background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+    background-position: center center; /* Resmi merkeze yerleştirir */
+    background-attachment: fixed; /* Sayfa kaydırıldığında arka planın sabit kalmasını sağlar */
+    align-content: center;
+}
+.container {
 
+    text-align: center;
+    color: white; /* Metin rengini beyaz yapar */
+}
+.jumbotron {
+    background: rgba(0, 0, 0, 0.5); /* Yarı saydam arka plan */
+    padding: 20px;
+    border-radius: 10px;
+}
+h1, p, a {
+    color: white; /* Metin rengini beyaz yapar */
+}
 a {
     color: #ffc107;
 }
@@ -15,7 +35,6 @@ a {
   margin: 0;
   height: 100vh;
   color: white;
-  background-color: #333;
 }
 
 .space-above {
