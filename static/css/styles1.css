@@ -52,7 +52,7 @@ a {
     overflow: hidden;
     border-color: white;
 }
-.rounded-table th, .rounded-table td {
+.table th, .table td {
     padding: 10px;
     border: 1px solid #ddd;
 }
