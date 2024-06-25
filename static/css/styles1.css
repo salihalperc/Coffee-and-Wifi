@@ -54,43 +54,46 @@ a {
 }
 
 @media (max-width: 768px) {
-            .table th, .table td {
-                padding: 8px;
-                font-size: 14px;
-            }
+    .table th, .table td {
+        padding: 8px;
+        font-size: 14px;
+    }
 }
 
-        @media (max-width: 480px) {
-            .table th, .table td {
-                padding: 6px;
-                font-size: 12px;
-            }
-            .table th, .table td {
-                display: block;
-                width: 100%;
-                box-sizing: border-box;
-            }
-            .table thead {
-                display: none;
-            }
-            .table tr {
-                display: block;
-                margin-bottom: 10px;
-            }
-            .table td {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding-left: 50%;
-                position: relative;
-            }
-            .table td::before {
-                content: attr(data-label);
-                position: absolute;
-                left: 10px;
-                width: 45%;
-                padding-right: 10px;
-                white-space: nowrap;
-                font-weight: bold;
-            }
-        }
+@media (max-width: 480px) {
+    .table th, .table td {
+        padding: 6px;
+        font-size: 12px;
+    }
+    .table th, .table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .table thead {
+        display: none;
+    }
+    .table tr {
+         display: block;
+         margin-bottom: 10px;
+    }
+    .table td {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding-left: 50%;
+         position: relative;
+    }
+    .table td::before {
+         content: attr(data-label);
+         position: absolute;
+         left: 10px;
+         width: 45%;
+         padding-right: 10px;
+         white-space: nowrap;
+         font-weight: bold;
+    }
+}
+.nav-link{
+    color: white;
+}
