@@ -24,6 +24,7 @@ body {
 }
 h1, p, a {
     color: white; /* Metin rengini beyaz yapar */
+    font-size: 1.3em;
 }
 a {
     color: #ffc107;

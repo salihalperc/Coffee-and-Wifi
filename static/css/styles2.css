@@ -15,7 +15,7 @@ body {
 .container {
 
     text-align: center;
-    color: white; /* Metin rengini beyaz yapar */
+    color: black; /* Metin rengini beyaz yapar */
 }
 .jumbotron {
     background: rgba(0, 0, 0, 0.5); /* Yarı saydam arka plan */
@@ -23,10 +23,11 @@ body {
     border-radius: 10px;
 }
 h1, p, a {
-    color: white; /* Metin rengini beyaz yapar */
+    color: black; /* Metin rengini beyaz yapar */
+    font-size: 1.3em;
 }
 a {
-    color: #ffc107;
+    color: blue;
 }
 
 .jumbotron {
