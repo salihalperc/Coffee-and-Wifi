@@ -52,10 +52,7 @@ a {
     overflow: hidden;
     border-color: white;
 }
-.table th, .table td {
-    padding: 10px;
-    border: 1px solid #ddd;
-}
+
 @media (max-width: 768px) {
             .table th, .table td {
                 padding: 8px;
